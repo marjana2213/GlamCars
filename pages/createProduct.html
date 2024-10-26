@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Добавить машину</title>
+    <script src="JS/CreatorRequest.js"></script>
+    <script src="JS/authorizationСheck.js"></script>
+</head>
+<body>
+    <button onclick="getCars()">Машины</button>
+    <a href="finde.html"><button>Найти машины</button></a>
+    <a href="update.html"><button>Обновить машину</button></a>
+    <a href="delete.html"><button>Удалить машину</button></a>
+    <a href="create.html"><button>Добавить машину</button></a>
+    <h1>Добавить товар</h1>
+
+    <p>Имя:</p>
+    <p><input type="text" id="name"></p>
+
+    <p>Описание:</p>
+    <p><textarea rows="10" cols="45" id="description"></textarea></p>
+
+    <p>Цена:</p>
+    <p><input type="text" id="price"></p>
+
+    <p>Фото:</p>
+    <p><input type="file" id="photo" accept="image/*,image/jpeg"></p>
+
+    <p><button onclick="sendJSONProduct()">Отправить</button></p>
+    <button onclick="getCars()">Машины</button>
+    <a href="finde.html"><button>Найти машины</button></a>
+    <a href="update.html"><button>Обновить машину</button></a>
+    <a href="delete.html"><button>Удалить машину</button></a>
+    <a href="create.html"><button>Добавить машину</button></a>
+</body>
+</html>

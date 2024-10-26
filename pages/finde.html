@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Найти машины</title>
+    <script src="JS/CreatorRequest.js"></script>
+    <script src="JS/authorizationСheck.js"></script>
+</head>
+<body>
+    <button onclick="getCars()">Машины</button>
+    <a href="create.html"><button>Добавить машину</button></a>
+    <a href="update.html"><button>Обновить машину</button></a>
+    <a href="delete.html"><button>Удалить машину</button></a>
+    <a href="createProduct.html"><button>Добавить товар</button></a>
+    <h1>Найти машины</h1>
+
+    <p>Укажите id машины::</p>
+    <p><input type="text" id="car_id"></p>
+
+    <p>Марка:</p>
+    <p><select id="brand" size=6>
+        <option disabled>Выберите марку</option>
+        <option value="Audio">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Ford">Ford</option>
+        <option value="Jaguar">Jaguar</option>
+        <option value="Jeep">Jeep</option>
+        <option value="Kia">Kia</option>
+        <option value="Land Rover">Land Rover</option>
+        <option value="Lexus">Lexus</option>
+        <option value="Mazda">Mazda</option>
+        <option value="Mercedes-Benz">Mercedes-Benz</option>
+        <option value="Mitsubishi">Mitsubishi</option>
+        <option value="Nissan">Nissan</option>
+        <option value="Porshe">Porshe</option>
+        <option value="Renault">Renault</option>
+        <option value="SKODA">SKODA</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Volkswagen">Volkswagen</option>
+        <option value="Hyundai">Hyundai</option>
+    </select></p>
+
+    <p>Модель:</p>
+    <p><input type="text" id="model"></p>
+
+    <p>Цвет:</p>
+    <p><input type="text" id="color"></p>
+
+    <p>Год производства:</p>
+    <p><input type="text" id="date"></p>
+
+    <p>Кузов:</p>
+    <p><select id="body" size=6>
+        <option disabled>Выберите кузов</option>
+        <option value="Внедорожник">Внедорожник</option>
+        <option value="Кабриолет">Кабриолет</option>
+        <option value="Кроссовер">Кроссовер</option>
+        <option value="Купе">Купе</option>
+        <option value="Минивэн">Минивэн</option>
+        <option value="Лифтбек">Лифтбек</option>
+        <option value="Седан">Седан</option>
+    </select></p>
+
+    <p>Мощность(л.с.):</p>
+    <p><input type="text" id="power"></p>
+
+    <p>КПП:</p>
+    <p><select id="transmition" size=2>
+        <option disabled>Выберите КПП</option>
+        <option value="Механическая">Механическая</option>
+        <option value="Автомат">Автомат</option>
+    </select></p>
+
+    <p>Двигатель:</p>
+    <p><select id="engine" size=3>
+        <option disabled>Выберите двигатель</option>
+        <option value="Бензин">Бензин</option>
+        <option value="Дизель">Дизель</option>
+        <option value="Электро">Электро</option>
+        <option value="Турбонадув">Турбонадув</option>
+        <option value="Инжектор">Инжектор</option>
+    </select></p>
+
+    <p>Привод:</p>
+    <p><select id="unit" size=2>
+        <option disabled>Выберите привод</option>
+        <option value="Полный">Полный</option>
+        <option value="Задний">Задний</option>
+        <option value="Передний">Передний</option>
+    </select></p>
+
+    <p>Страна производитель:</p>
+    <p><input type="text" id="country"></p>
+
+    <p>Цена:</p>
+    <p><input type="text" id="price"></p>
+
+    <p><button onclick="findeCars()">Найти</button></p>
+    <button onclick="getCars()">Машины</button>
+    <a href="create.html"><button>Добавить авто</button></a>
+    <a href="update.html"><button>Обновить машину</button></a>
+    <a href="delete.html"><button>Удалить машину</button></a>
+    <a href="createProduct.html"><button>Добавить товар</button></a>
+</body>
+</html>

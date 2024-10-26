@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Сумма</title>
+    <script src="JS/CreatorRequest.js"></script>
+    <script src="JS/authorizationСheck.js"></script>
+</head>
+<body>
+    <h1>Сумма проданных машин за период</h1>
+    
+    <p>Период:</p>
+    <p><select id="quarter" required="required">
+        <option disabled>Выберите период</option>
+        <option value="1">За последний месяц</option>
+        <option value="3">За последние 3 месяца</option>
+        <option value="6">За последние пол года</option>
+        <option value="12">За последний год</option>
+        <option value="All">За всё время</option>
+    </select></p>
+
+    <p><button onclick="findeQuarter()">Получить</button></p>
+</body>
+</html>

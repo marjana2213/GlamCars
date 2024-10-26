@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Магазин</title>
+    <script src="JS/storeService.js"></script>
+    <script src="JS/authorizationСheck.js"></script>
+    <script src="JS/basket.js"></script>
+    <link rel="stylesheet" href="userStyle.css">
+</head>
+<body>
+    <h1 style="color:Tomato;" align = "center" id="start">Glam Cars</h1>
+    <h2 align = "center">Лучший выбор для вашего комфорта</h2>
+
+    <a href="#x" class="overlay" id="basket"></a>
+    <div class="popup">
+        <a class="close"title="Закрыть" href="#close"></a>
+    </div>
+
+    <h2><a style="color:Tomato;" href="products.html">Другие товары</a></h2>
+
+<fieldset class="filter">
+    <legend>Фильтр</legend>
+    <select name="brand[]" id="brand" required="required" multiple>
+        <option disabled>Выберите марки</option>
+    </select>
+
+    <select name="model[]" id="model" required="required" multiple>
+        <option disabled>Выберите модели</option>
+    </select>
+
+    <select name="body[]" id="body" required="required" multiple>
+        <option disabled>Выберите кузовы</option>
+        <option value="Внедорожник">Внедорожник</option>
+        <option value="Кабриолет">Кабриолет</option>
+        <option value="Кроссовер">Кроссовер</option>
+        <option value="Купе">Купе</option>
+        <option value="Минивэн">Минивэн</option>
+        <option value="Лифтбек">Лифтбек</option>
+        <option value="Седан">Седан</option>
+    </select>
+
+    <select name="transmition[]" id="transmition" required="required" multiple>
+        <option disabled>Выберите КПП</option>
+        <option value="Механическая">Механическая</option>
+        <option value="Автомат">Автомат</option>
+    </select>
+
+    <select name="engine[]" id="engine" required="required" multiple>
+        <option disabled>Выберите двигатели</option>
+        <option value="Бензин">Бензин</option>
+        <option value="Дизель">Дизель</option>
+        <option value="Электро">Электро</option>
+        <option value="Турбонадув">Турбонадув</option>
+        <option value="Инжектор">Инжектор</option>
+    </select>
+
+    <select name="unit[]" id="unit" required="required" multiple>
+        <option disabled>Выберите приводы</option>
+        <option value="Полный">Полный</option>
+        <option value="Задний">Задний</option>
+        <option value="Передний">Передний</option>
+    </select>
+    <div>
+    <p> <input type="range" id="min_price" name="min_price"=
+            min="0" max="40000000" value="0">
+        <label for="min_price" class="min_price">Цена от: </label>
+        <input type="range" id="min_power" name="min_power"=
+            min="0" max="1000" value="0">
+        <label for="min_power" class="min_power">Мощьность от: </label>
+    </p>
+    <p> <input type="range" id="max_price" name="max_price"
+            min="0" max="40000000" value="40000000">
+        <label for="max_price" class="max_price">Цена до: </label>
+        <input type="range" id="max_power" name="max_power"
+            min="0" max="1000" value="1000">
+        <label for="max_power" class="max_power">Мощьность до: </label>
+    </p>
+    </div>
+    <button id="search">Найти</button>
+</fieldset>
+    <p class="store">Найдено:</p>
+
+    <div class="grid">
+        
+    </div>
+</body>
+</html>
